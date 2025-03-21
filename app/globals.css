@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,8 +15,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #000000;
   }
 }
 
@@ -24,3 +25,47 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.icon {
+  color: #ffffff; /* Default icon color */
+  transition: color 0.3s ease;
+}
+
+.icon.github:hover {
+  color: #6e5494; /* GitHub Purple */
+}
+
+.icon.linkedin:hover {
+  color: #0077B5; /* LinkedIn Blue */
+}
+
+.icon.facebook:hover {
+  color: #1877F2; /* Facebook Blue */
+}
+.logo, .aboutme, .skills, .projects {
+  color: #ffffff; /* Default text color */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #A8DADC; /* Example: Yellow for Logo */
+}
+
+.aboutme:hover {
+  color: #A8DADC; /* Example: Coral for About Me */
+}
+
+.skills:hover {
+  color: #A8DADC; /* Example: Green for Skills */
+}
+
+.projects:hover {
+  color: #A8DADC; /* Example: Blue for Projects */
+}
+
